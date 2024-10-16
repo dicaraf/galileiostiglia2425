@@ -13,24 +13,24 @@ int main(){
     scanf(" %c", &valore2);
     printf("inserisci il seme della seconda carta: ");
     scanf(" %c", &seme2);
-    if(valore1==valore2){
-        if(seme1=='c' && seme2!='c'){
+    if(valore1==valore2){ //controllo se i valori delle carte sono uguali
+        if(seme1=='c' && seme2!='c'){ //se il seme della prima è cuori(il maggiore) e l'altro non è cuori (quindi è un seme con valore minore)
             printf("La prima carta è maggiore della seconda\n");
         }
-        else if(seme1=='q' && seme2!='c' && seme2!='q'){
+        else if(seme1=='q' && seme2!='c' && seme2!='q'){ //se il seme della prima è quadri(il secondo maggiore) e l'altro non è cuori o quadri (quindi è un seme con valore minore)
             printf("La prima carta è maggiore della seconda\n");
         }
-        else if(seme1=='f' && seme2!='c' && seme2!='q' && seme2!='f'){
+        else if(seme1=='f' && seme2!='c' && seme2!='q' && seme2!='f'){ 
             printf("La prima carta è maggiore della seconda\n");
         }
-        else if(seme1==seme2){
+        else if(seme1==seme2){ //se arrivo qui il seme della prima carta è picche oppure è uguale al seme della seconda
             printf("Le due carte sono uguali\n");
         }
-        else{
+        else{ //in tutti i casi rimanenti
             printf("La seconda carta è maggiore della prima\n");
         }
     }
-    else{
+    else{ //se arrivo a questo else vuol dire che i due valori sono diversi
         if(valore1=='k' && valore2!='k'){
             printf("La prima carta è maggiore della seconda\n");
         }
