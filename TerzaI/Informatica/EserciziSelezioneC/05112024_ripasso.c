@@ -18,10 +18,11 @@ int main(){
     printf("Inserisci il primo voto");
     scanf("%f", &voto1);
     srand(time(NULL));
-    voto2=rand()%5+4;
+    voto2 = rand()%5+4;
     printf("Il voto casuale è %f", voto2);
-    printf("Scegli un'operazione - 1 mostrare la media dei due voti - 2 mostrare il voto maggiore tra i due- 3 mostrare il voto minore tra i due. - 4 mostrare il numero di voti sufficiente tra i due.");
-    scanf("%d",&scelta);
+    printf("Scegli un'operazione \n- 1 mostrare la media dei due voti \n- 2 mostrare il voto maggiore tra i due\n- 3 mostrare il voto minore tra i due. \n- 4 mostrare il numero di voti sufficiente tra i due.");
+    scanf("%d", &scelta);
+    
     switch(scelta){
         case 1:
             
