@@ -12,7 +12,7 @@ int main(){
 
     printf("numero random: %d", random);
 
-
+    return 0;
 
 
 }
