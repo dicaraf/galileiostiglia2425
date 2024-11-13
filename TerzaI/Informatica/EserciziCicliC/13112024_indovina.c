@@ -6,18 +6,20 @@
 int main(){
     srand(time(NULL));
     int numcasuale=0,num=0;
+    int contatore=0;
     numcasuale=random()%991+10;
 
     while(numcasuale!=num){
         printf("\nprova ad indovinare il numero: ");
         scanf("%d", &num);
+        contatore++;
 
         if(numcasuale<num)
             printf("\nil numero inserito è maggiore del numero da indovinare");
         else if(numcasuale>num)
             printf("\nil numero inserito è minore del numero da indovinare");
     }
-    printf("\nhai indovinato il numero!");
+    printf("\nhai indovinato il numero in %d tentativi!", contatore);
         
 
 }
