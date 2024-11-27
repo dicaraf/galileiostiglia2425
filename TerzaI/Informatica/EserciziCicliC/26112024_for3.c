@@ -1,4 +1,4 @@
-/*Scrivi un programma che chieda un numero intero all'utente e mostri tutti i numeri compresi tra 0 e il numero scelto.*/
+/*Scrivi un programma che chieda un numero intero all'utente e mostri tutti i numeri compresi tra il numero scelto e 0.*/
 
 #include <stdio.h>
 int main(){
@@ -9,7 +9,7 @@ int main(){
         scanf("%d", &num);
     } while (num<0);
     
-    for(int i=0; i<num; i++){
+    for(int i=num; i>=0; i--){
         printf("%d\n", i);
     }
 }

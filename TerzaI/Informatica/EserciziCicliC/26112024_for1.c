@@ -10,7 +10,7 @@ int main(){
         scanf("%d", &num);
     } while (num<0);
 
-    for(int i=num; i>=0; i=i+2){
+    for(int i=num; i>=0; i=i-2){
         printf("%d\n", i);
 
     }
