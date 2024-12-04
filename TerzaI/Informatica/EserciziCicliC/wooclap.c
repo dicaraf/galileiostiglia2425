@@ -1,13 +1,11 @@
 #include <stdio.h>
+
 int main() {
-    int x = 1;
-    do {
-        printf("x = %d\n", x);
-        if (x % 3 == 0) {
-            x += 3;
-        } else {
-            x++;
+    for (int i = 5; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            printf("*");
         }
-    } while (x < 15);
+        printf("\n");
+    }
     return 0;
 }
