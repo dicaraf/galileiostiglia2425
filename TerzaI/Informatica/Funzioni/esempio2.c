@@ -1,5 +1,6 @@
 /*Leggi il raggio di una circonferenza e calcola il perimetro e l’area del cerchio che essa delimita.*/
 #include <stdio.h>
+#include <stdlib.h>
 const float PI=3.14;
 float calcola_perimetro(float raggio);
 float calcola_area(float raggio);
@@ -13,6 +14,7 @@ int main(){
     A=calcola_area(R);
     P=calcola_perimetro(R);
     printf("l'area è %f, il perimetro è %f", A, P);
+
 return 0;
 }
 
