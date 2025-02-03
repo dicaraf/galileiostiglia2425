@@ -6,6 +6,7 @@ funzione mostra_medie()
 funzione calcola_media(ID_città)*/
 
 #include <stdio.h>
+#include <stdlib.h>
 #define NUM_CITTA 2
 float temp1=0,temp2=0;
 int count1=0,count2=0;
@@ -14,17 +15,48 @@ void inserisci_temp(int ID_citta);
 void mostra_media_citta(int ID_citta);
 void mostra_medie();
 float calcola_media(int ID_citta);
+void mostraMenu();
 
 int main(){
     int IDcitta;
+    int scelta;
     do{
-        printf("definisici l'ID della citta: ");
-        scanf("%d", &IDcitta);
-        inserisci_temp(IDcitta);
-        mostra_medie();
-    }while(IDcitta!=0);
-}
+        mostraMenu();
+        scanf("%d", &scelta);
+        switch (scelta)
+        {
+        case 1:
+            printf("definisici l'ID della citta: ");
+            scanf("%d", &IDcitta);
+            inserisci_temp(IDcitta);
+            break;
+        case 2:
+            printf("definisici l'ID della citta: ");
+            scanf("%d", &IDcitta);
+            mostra_media_citta(IDcitta);
+            break;
+        case 3:
+            mostra_medie();
+            break;
+        case 0:
+            printf("Il programma sta per terminare\a");
+            break;
+        default:
+            printf("Opzione non valida");
+            break;
+        }
+        
 
+    }while(scelta!=0);
+}
+void mostraMenu(){
+    system("clear");
+    printf("Scegli un valore per eseguire un'azione:\n");
+    printf("1.Inserisci temperatura di una città\n");
+    printf("2.Mostra il valore di una città\n");
+    printf("3.Mostra i valori di tutte le città\n");
+    printf("0.Termina il programma\n");
+}
 void inserisci_temp(int ID_citta){
     float T;
     printf("inserisci una temperatura per la città %d: ", ID_citta);
@@ -55,6 +87,7 @@ void mostra_medie(){
 void mostra_media_citta(int ID_citta){
     float t = calcola_media(ID_citta);
     printf("\nLa media della città %d è %f.\n", ID_citta, t);
+    
 }
 
 float calcola_media(int ID_citta){
