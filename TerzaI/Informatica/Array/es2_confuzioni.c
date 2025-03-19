@@ -9,17 +9,18 @@ int main(){
     int vettore[DIM];
 
     riempiVettore(DIM, vettore);
+    stampaVettore(DIM, vettore);
 }
 
 void riempiVettore(int dim, int v[]){
-    for(int i=0; i<DIM; i++){
-        printf("Inserisci il valore per la cella %d", i);
+    for(int i=0; i<dim; i++){
+        printf("Inserisci il valore per la cella %d: ", i);
         scanf("%d", &v[i]);
     }
 }
 
 void stampaVettore(int dim, int v[]){
-    for(int i = 0; i<DIM; i++){
+    for(int i = 0; i<dim; i++){
         printf("%d\t", *(v+i));
     }
 }
