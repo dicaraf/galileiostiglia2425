@@ -18,3 +18,14 @@ void riempiVettoreCasuale(int vettore[], int dim, int minimo, int massimo){
         vettore[i]=rand()%(massimo-minimo+1)+minimo;
     }
 }
+
+int contaOccorrenze(int vettore[], int dim, int valore){
+    int cnt=0;
+
+    for(int i=0; i<dim; i++){
+        if(vettore[i] == valore){
+            cnt++;
+        }
+    }
+    return cnt;
+}

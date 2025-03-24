@@ -19,3 +19,11 @@ void riempiVettore(int vettore[], int dim);
  * @param int massimo valore dei numeri casuali
  */
 void riempiVettoreCasuale(int vettore[], int dim, int minimo, int massimo);
+/**
+ * questa funzione restituisce il numero di volte in cui compare la variabile valore all'interno del vettore
+ * @param int[]vettore in ingresso
+ * @param int dimensione del vettore
+ * @param int valore da ricercare
+ * @return int numero di occorrenze
+ */
+int contaOccorrenze(int vettore[], int dim, int valore);
