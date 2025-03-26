@@ -48,3 +48,8 @@ int ricercaSequenziale(int *vettore, int dim, int valore);
  * @return int posizione del primo elemento uguale a valore o -1 se non trovato
  */
 int ricercaBinaria(int array[], int dim, int estInf, int estSup, int valore);
+
+/**
+ * Funzione che riempie un vettore di dimensione dim con numeri casuali in ordine crescente
+ */
+void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
