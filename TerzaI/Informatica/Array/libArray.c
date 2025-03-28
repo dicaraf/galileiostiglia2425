@@ -77,3 +77,21 @@ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) 
         vett[pos] = num;
     }
 }
+
+void bubbleSort(int vett[], int dim){
+    int temp;
+    int flag=0;
+    int i=0;
+    while(flag==0){
+        flag=1;
+        for(int j=0; j<dim-1-i; j++){
+            if(vett[j]>vett[j+1]){
+                flag=0;
+                temp=vett[j];
+                vett[j]=vett[j+1];
+                vett[j+1]=temp;
+            }
+        }
+        i++;
+    }
+}

@@ -53,3 +53,11 @@ int ricercaBinaria(int array[], int dim, int estInf, int estSup, int valore);
  * Funzione che riempie un vettore di dimensione dim con numeri casuali in ordine crescente
  */
 void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
+
+/**
+ * funzione che ordina un vettore
+ * @param int[]vettore in ingresso
+ * @param int dimensione del vettore
+ */
+
+void bubbleSort(int vett[], int dim);
