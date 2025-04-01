@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "libArray.h"
 #include "libArray.c"
+
 #define DIM 100
+
 int main(){
     srand(time(NULL));
     int vettore[DIM];

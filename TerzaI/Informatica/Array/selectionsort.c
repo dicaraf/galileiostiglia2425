@@ -1,4 +1,4 @@
-/*scrivi un programma che genera un vettore casuale e lo ordina*/
+/*scrivi un programma che genera un vettore casuale e lo ordina usando selection sort*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,12 +16,11 @@ int main(){
     riempiVettoreCasuale(vett, DIM,0,100);
     stampaVettore(vett, DIM, '-');
     start = (double)clock();
-    bubbleSort(vett, DIM);
+    selectionSort(vett, DIM);
     end = (double)clock();
     elapsed_time = ((double)(end - start) );
     printf("\n\nTempo di esecuzione: %.2f ms\n", elapsed_time);
     printf("\n\n");
-    stampaVettore(vett,DIM, '-' );
-
+    stampaVettore(vett, DIM, '-');
     return 0;
 }

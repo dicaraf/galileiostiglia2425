@@ -2,6 +2,7 @@
     "files.associations": {
         "stdio.h": "c",
         "cstdlib": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "time.h": "c"
     }
 }
