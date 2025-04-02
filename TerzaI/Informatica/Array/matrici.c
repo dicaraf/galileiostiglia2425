@@ -1,19 +1,43 @@
 #include <stdio.h>
 #include "libArray.c"
-
+#define RIGHE 10
+#define COLONNE 8
 
 int main(){
     srand(time(NULL));
-    int mat[10][10];
+    int mat[RIGHE][COLONNE];
 
-    for(int i=0; i<10; i++){
-        riempiVettoreCasuale(mat[i], 10, 0, 100);
-        stampaVettore(mat[i], 10, '\t');
-        bubbleSort(mat[i], 10);
+    for(int i=0; i<RIGHE; i++){
+        for(int j=0; j<COLONNE; j++){
+            mat[i][j] = i;
+        }
+    }
+    for(int i=0; i<RIGHE; i++){
+        for(int j=0; j<COLONNE; j++){
+            printf("%d\t", mat[i][j]);
+        }
+        printf("\n");
+    }
+    riempiVettoreCasuale(mat[0], COLONNE, 0, 20);
+    for(int i=0; i<RIGHE; i++){
+        for(int j=0; j<COLONNE; j++){
+            printf("%d\t", mat[i][j]);
+        }
+        printf("\n");
+    }
+
+
+
+
+
+    for(int i=0; i<RIGHE; i++){
+        riempiVettoreCasuale(mat[i], COLONNE, 0, 100);
+        stampaVettore(mat[i], COLONNE, '\t');
+        bubbleSort(mat[i], COLONNE);
     }
     printf("\n\n\n");
-    for(int i=0; i<10; i++){
-        for(int j=0; j<10; j++){
+    for(int i=0; i<RIGHE; i++){
+        for(int j=0; j<COLONNE; j++){
             printf("%d\t", mat[i][j]);
         }
         printf("\n");

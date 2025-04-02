@@ -5,7 +5,7 @@
 #include <time.h>
 #include "libArray.c"
 
-#define DIM 2000
+#define DIM 20000
 
 int main(){
     srand(time(NULL));
@@ -14,14 +14,14 @@ int main(){
     double elapsed_time;
 
     riempiVettoreCasuale(vett, DIM,0,100);
-    stampaVettore(vett, DIM, '-');
+    //stampaVettore(vett, DIM, '-');
     start = (double)clock();
     bubbleSort(vett, DIM);
     end = (double)clock();
     elapsed_time = ((double)(end - start) );
     printf("\n\nTempo di esecuzione: %.2f ms\n", elapsed_time);
     printf("\n\n");
-    stampaVettore(vett,DIM, '-' );
+    //stampaVettore(vett,DIM, '-' );
 
     return 0;
 }
