@@ -5,7 +5,7 @@
 #include <time.h>
 #include "libArray.c"
 
-#define DIM 20000
+#define DIM 
 
 int main(){
     srand(time(NULL));
